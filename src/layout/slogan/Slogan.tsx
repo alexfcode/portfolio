@@ -14,7 +14,7 @@ export const Slogan = () => {
     )
 }
 
-const StyledSlogan = styled.div`
+const StyledSlogan = styled.section`
     background-color: #d3f1fd;
     min-height: 30vh;
 `

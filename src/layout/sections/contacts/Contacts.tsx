@@ -18,7 +18,7 @@ export const Contacts = () => {
   )
 }
 
-const StyledContacts = styled.div`
+const StyledContacts = styled.section`
 background-color: #7beb71;
 min-height: 50vh;
 `

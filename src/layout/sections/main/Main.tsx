@@ -7,31 +7,32 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 export const Main = () => {
     return (
         <StyledMain>
-            
+
             <FlexWrapper align="center" justify="space-around">
-            <div>
-                <span>Hi There</span>
-                <Name>I am Alex</Name>
-                <MainTitle>A Web Developer.</MainTitle>
-            </div>
-            <Photo src={photo} />
+                <div>
+                    <span>Hi There</span>
+                    <Name>I am Alex</Name>
+                    <MainTitle>A Web Developer.</MainTitle>
+                </div>
+                <Photo src={photo} />
             </FlexWrapper>
-                
-            
-            
+
+
+
         </StyledMain>
     );
 };
+
+
+const StyledMain = styled.section`
+    min-height: 100vh;
+    background-color: #fac8fa;
+`
 
 const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: cover;
-`
-
-const StyledMain = styled.div`
-    min-height: 100vh;
-    background-color: #fac8fa;
 `
 
 const MainTitle = styled.h1`

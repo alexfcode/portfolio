@@ -7,7 +7,7 @@ import { Skill } from './skill/Skill';
 
 export const Skills = () => {
     return (
-        <StyledSkins>
+        <StyledSkils>
             <SectionTitle>My Skills</SectionTitle>
             <FlexWrapper wrap='wrap' justify='space-around'>
                 <Skill 
@@ -35,11 +35,11 @@ export const Skills = () => {
                 title={"WEB DESIgN"} 
                 text={"Lorem ipsum dolor sit amet, consectetur "}/>
             </FlexWrapper>
-        </StyledSkins>
+        </StyledSkils>
     );
 };
 
-const StyledSkins = styled.section`
+const StyledSkils = styled.section`
     background-color: #bbf0eb;
     min-height: 100vh;
 `
