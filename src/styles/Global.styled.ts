@@ -14,6 +14,7 @@ export const GlobalStyled = createGlobalStyle`
  
  body {
   color: ${theme.colors.font};
+  line-height: 1.2;
   margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -32,6 +33,10 @@ ul {
 buttton {
     background-color: unset;
     border: none;
+}
+
+section {
+  padding: 100px 0;
 }
 
 section:nth-of-type(odd) {
