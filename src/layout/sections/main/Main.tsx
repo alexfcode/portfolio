@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "../../../assets/images/ya.webp"
+import photo from "../../../assets/images/photo.webp"
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
 
@@ -11,7 +11,7 @@ export const Main = () => {
             <FlexWrapper align="center" justify="space-around">
                 <div>
                     <span>Hi There</span>
-                    <Name>I am Alex</Name>
+                    <Name>I am Svetlana</Name>
                     <MainTitle>A Web Developer.</MainTitle>
                 </div>
                 <Photo src={photo} />

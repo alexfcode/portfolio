@@ -4,8 +4,8 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Menu } from "../../../components/menu/Menu";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Work } from "./work/Work";
-import socialImg from "../../../assets/images/Proj-1.webp"
-import timerImg from "../../../assets/images/Proj-2.webp"
+import socialImg from "../../../assets/images/proj1.webp"
+import timerImg from "../../../assets/images//proj2.webp"
 
 const worksItems = ["Home", "Landing Page", "Reacp", "SPA",]
 
