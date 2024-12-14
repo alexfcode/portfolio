@@ -18,23 +18,23 @@ export const Skills = () => {
                     <Skill
                         iconId={"css"}
                         title={"css3"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor "} />
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
                     <Skill
                         iconId={"react"}
                         title={"React"}
-                        text={"Lorem ipsum dolor sit amet, consectetur "} />
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
                     <Skill
                         iconId={"typescript"}
                         title={"typescript"}
-                        text={"Lorem ipsum dolor sit amet, consectetur "} />
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
                     <Skill
                         iconId={"sc"}
                         title={"styled components"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
+                        text={"LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
                     <Skill
                         iconId={"figma"}
                         title={"WEB DESIgN"}
-                        text={"Lorem ipsum dolor sit amet, consectetur "} />
+                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
                 </FlexWrapper>
             </Container>
         </StyledSkills>

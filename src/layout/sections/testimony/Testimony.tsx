@@ -28,7 +28,7 @@ const StyledTestimony = styled.section`
     min-height: 50vh;
     background-color: #cbc9f0;
     ${IconWrapper} {
-        margin: 40px 0 72px;
+        margin: 35px 0 60px;
     }
 `
 

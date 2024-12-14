@@ -9,7 +9,7 @@ export const Contacts = () => {
     return (
         <StyledContacts>
             <Container>
-                <SectionTitle>Contacts</SectionTitle>
+                <SectionTitle>Contact</SectionTitle>
                 <StyledForm>
                     <Field placeholder={"name"}></Field>
                     <Field placeholder={"subject"}></Field>
