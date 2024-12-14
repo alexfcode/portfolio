@@ -1,47 +1,54 @@
-import React from 'react'
-import styled from 'styled-components';
+import { S } from './Skills_Styles';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
 import { Container } from '../../../components/Container';
 
+const SkillData = [{
+    iconId: "code",
+    title: "html5",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+},
+{
+    iconId: "css",
+    title: "css3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+},
+{
+    iconId: "react",
+    title: "React",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+},
+{
+    iconId: "typescript",
+    title: "typescript",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+},
+{
+    iconId: "sc",
+    title: "styled components",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+},
+{
+    iconId: "figma",
+    title: "WEB DESIgN",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+}]
+
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <S.Skills>
             <Container>
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap='wrap' justify='space-between'>
-                    <Skill
-                        iconId={"code"}
-                        title={"html5"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
-                    <Skill
-                        iconId={"css"}
-                        title={"css3"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
-                    <Skill
-                        iconId={"react"}
-                        title={"React"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
-                    <Skill
-                        iconId={"typescript"}
-                        title={"typescript"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
-                    <Skill
-                        iconId={"sc"}
-                        title={"styled components"}
-                        text={"LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
-                    <Skill
-                        iconId={"figma"}
-                        title={"WEB DESIgN"}
-                        text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"} />
+                    {SkillData.map((s, index) => {
+                        return <Skill iconId={s.iconId} key={index}
+                            title={s.title}
+                            text={s.description} />
+                    })}
                 </FlexWrapper>
             </Container>
-        </StyledSkills>
+        </S.Skills>
     );
 };
-
-const StyledSkills = styled.section`
-
-`
 
