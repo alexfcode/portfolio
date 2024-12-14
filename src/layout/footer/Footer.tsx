@@ -13,22 +13,22 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={"21px"} viewbox={'21px'} iconId={'instagram'}/>
+                            <Icon height={'21px'} width={"21px"} viewbox={'0 0 50 50'} iconId={'instagram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={"21px"} viewbox={'21px'} iconId={'telegram'}/>
+                            <Icon height={'21px'} width={"21px"} viewbox={'0 0 50 50'} iconId={'telegram'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={"21px"} viewbox={'21px'} iconId={'linkedin'}/>
+                            <Icon height={'21px'} width={"21px"} viewbox={'0 0 50 50'} iconId={'linkedin'}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={'21px'} width={"21px"} viewbox={'21px'} iconId={'vk'}/>
+                            <Icon height={'21px'} width={"21px"} viewbox={'0 0 50 50'} iconId={'vk'}/>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
