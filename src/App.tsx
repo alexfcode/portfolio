@@ -12,14 +12,14 @@ import { Footer } from './layout/footer/Footer';
 function App() {
     return (
         <div className="App">
-            <Header/>
+            <Header />
             <Main />
-            <Skills/>
+            <Skills />
             <Works />
             <Testimony />
             <Contacts />
-            <Slogan/> 
-            <Footer />  
+            <Slogan />
+            <Footer />
         </div>
     );
 }
