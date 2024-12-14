@@ -29,8 +29,8 @@ export const Works = () => {
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
                     {workList.map((w, index) => {
                         return (
-                            <Work
-                                src={w.src} key={index}
+                            <Work key={index}
+                                src={w.src}
                                 title={w.title}
                                 text={w.text} />
                         )
