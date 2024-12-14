@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Icon } from "../../../components/icon/Icon";
@@ -8,7 +7,7 @@ import { S } from "../skills/Skills_Styles";
 import { Container } from "../../../components/Container";
 
 
-export const Testimony = () => {
+export const Testimony: React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
