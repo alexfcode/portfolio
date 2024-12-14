@@ -21,6 +21,8 @@ export const GlobalStyled = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 360px;
+  
 }
 
 a {
@@ -70,6 +72,10 @@ button {
 
 section {
   padding: 100px 0;
+
+  @media ${theme.media.mobile} {
+    padding: 80px 0;
+  }
 }
 
 section:nth-of-type(odd) {
