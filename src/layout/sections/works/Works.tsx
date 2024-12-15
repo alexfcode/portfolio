@@ -7,7 +7,7 @@ import socialImg from "../../../assets/images/proj1.webp"
 import timerImg from "../../../assets/images//proj2.webp"
 import { Container } from "../../../components/Container";
 
-const worksItems = ["Home", "Landing Page", "Reacp", "SPA",]
+const tabsItems = ["Home", "Landing Page", "Reacp", "SPA",]
 const workList = [{
     src: socialImg,
     title: "Social Network",
@@ -25,7 +25,7 @@ export const Works = () => {
         <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu menuItems={worksItems} />
+                <TabMenu tabsItems={tabsItems} />
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
                     {workList.map((w, index) => {
                         return (
