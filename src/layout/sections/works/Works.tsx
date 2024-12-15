@@ -66,7 +66,7 @@ export const Works: React.FC = () => {
         <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu tabsItems={tabsItems} />
+                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
                     {filteredWorks.map((w, index) => {
                         return (

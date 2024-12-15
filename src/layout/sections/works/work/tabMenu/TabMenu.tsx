@@ -4,7 +4,12 @@ import { Link } from "../../../../../components/Link";
 
 
 
-export const TabMenu = (props: { tabsItems: Array<{status: "all" | "landing" | "react" | "spa", title: string}> }) => {
+type  TabMenuPropsType = {
+    tabsItems: Array<{status: "all" | "landing" | "react" | "spa", title: string}>,
+    changeFilterStatus: (value: "all" | "landing" | "react" | "spa",) => void
+}
+
+export const TabMenu = (props: TabMenuPropsType) => {
     return (
         <StyledTabMenu>
             <ul>
