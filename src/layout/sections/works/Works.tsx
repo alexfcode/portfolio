@@ -6,6 +6,7 @@ import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/proj1.webp"
 import timerImg from "../../../assets/images//proj2.webp"
 import { Container } from "../../../components/Container";
+import { useState } from "react";
 
 // const tabsItems = ["Home", "Landing Page", "Reacp", "SPA",]
 
@@ -28,7 +29,7 @@ const tabsItems: Array<{ status: "all" | "landing" | "react" | "spa", title: str
     },
 ]
 
-const workList = [{
+const worksList = [{
     src: socialImg,
     title: "Social Network",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
@@ -42,14 +43,32 @@ const workList = [{
 },
 ]
 
-export const Works = () => {
+export const Works: React.FC = () => {
+    
+    const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
+    let filteredWorks = worksList
+
+    if (currentFilterStatus === "landing") {
+        filteredWorks = worksList.filter(work => work.type === "landing")
+    }
+    if (currentFilterStatus === "react") {
+        filteredWorks = worksList.filter(work => work.type === "react")
+    }
+    if (currentFilterStatus === "spa") {
+        filteredWorks = worksList.filter(work => work.type === "spa")
+    }
+
+    function changeFilterStatus (value: "all" | "landing" | "react" | "spa") {
+        setCurrentFilterStatus(value)
+    }
+    
     return (
         <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu tabsItems={tabsItems} />
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
-                    {workList.map((w, index) => {
+                    {filteredWorks.map((w, index) => {
                         return (
                             <Work key={index}
                                 src={w.src}
