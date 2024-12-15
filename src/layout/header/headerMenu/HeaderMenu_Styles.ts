@@ -67,8 +67,6 @@ const MenuItem = styled.li`
 // Mobile Menu
 
 const MobileMenu = styled.nav`
-display: none;
-
 `;
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
