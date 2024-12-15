@@ -1,6 +1,6 @@
 import { S } from "./work/Works_Styles";
 import { SectionTitle } from "../../../components/SectionTitle";
-import { TabMenu } from "./work/tabMenu/TabMenu";
+import { TabMenu, TabsStatusType } from "./work/tabMenu/TabMenu";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/proj1.webp"
@@ -10,7 +10,7 @@ import { useState } from "react";
 
 // const tabsItems = ["Home", "Landing Page", "Reacp", "SPA",]
 
-const tabsItems: Array<{ status: "all" | "landing" | "react" | "spa", title: string }> = [
+const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
         title: "All",
         status: "all"
@@ -58,7 +58,7 @@ export const Works: React.FC = () => {
         filteredWorks = worksList.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus (value: "all" | "landing" | "react" | "spa") {
+    function changeFilterStatus (value: TabsStatusType) {
         setCurrentFilterStatus(value)
     }
     
@@ -66,7 +66,9 @@ export const Works: React.FC = () => {
         <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}/>
+                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}
+                currentFilterStatus={currentFilterStatus}
+                />
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap="wrap">
                     {filteredWorks.map((w, index) => {
                         return (
