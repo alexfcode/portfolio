@@ -4,7 +4,7 @@ import { Link } from "../../../../../components/Link";
 
 
 
-export const TabMenu = (props: { tabsItems: Array<string> }) => {
+export const TabMenu = (props: { tabsItems: Array<{status: "all" | "landing" | "react" | "spa", title: string}> }) => {
     return (
         <StyledTabMenu>
             <ul>
@@ -12,7 +12,7 @@ export const TabMenu = (props: { tabsItems: Array<string> }) => {
                 {props.tabsItems.map((item, index) => {
                     return (
                         <ListItem key={index}>
-                            <Link href="">{item}</Link>
+                            <Link href="">{item.title}</Link>
                         </ListItem>
                     )
                 })}

@@ -7,16 +7,38 @@ import socialImg from "../../../assets/images/proj1.webp"
 import timerImg from "../../../assets/images//proj2.webp"
 import { Container } from "../../../components/Container";
 
-const tabsItems = ["Home", "Landing Page", "Reacp", "SPA",]
+// const tabsItems = ["Home", "Landing Page", "Reacp", "SPA",]
+
+const tabsItems: Array<{ status: "all" | "landing" | "react" | "spa", title: string }> = [
+    {
+        title: "All",
+        status: "all"
+    },
+    {
+        title: "landing Page",
+        status: "landing"
+    },
+    {
+        title: "React",
+        status: "react"
+    },
+    {
+        title: "spa",
+        status: "spa"
+    },
+]
+
 const workList = [{
     src: socialImg,
     title: "Social Network",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    type: "spa"
 },
 {
     src: timerImg,
     title: "Timer",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim"
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+    type: "React"
 },
 ]
 
