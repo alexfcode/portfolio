@@ -7,11 +7,13 @@ import { Testimony } from './layout/sections/testimony/Testimony';
 import { Contacts } from './layout/sections/contacts/Contacts';
 import { Slogan } from './layout/slogan/Slogan';
 import { Footer } from './layout/footer/Footer';
+import { Particle } from "./components/Particle/Particle"
 
 
 function App() {
     return (
         <div className="App">
+            <Particle />
             <Header />
             <Main />
             <Skills />
