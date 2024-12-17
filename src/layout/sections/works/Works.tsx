@@ -40,7 +40,7 @@ const worksList = [
     src: timerImg,
     title: "Timer",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-    type: "React",
+    type: "react",
   },
 ];
 

@@ -20,7 +20,7 @@ export const TabMenu = (props: TabMenuPropsType) => {
                 {props.tabsItems.map((item, index) => {
                     return (
                         <ListItem key={index}>
-                            <Link active ={props.currentFilterStatus === item.status} as={Button} onClick={()=>{props.changeFilterStatus(item.status)}}>{item.title}</Link>
+                            <Link active ={props.currentFilterStatus === item.status} onClick={()=>{props.changeFilterStatus(item.status)}}>{item.title}</Link>
                         </ListItem>
                     )
                 })}
