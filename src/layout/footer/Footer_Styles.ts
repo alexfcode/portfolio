@@ -44,7 +44,6 @@ const SocialLink = styled.a`
   }
 `;
 
-
 const Copyright = styled.small`
   opacity: 0.5;
   text-align: center;
