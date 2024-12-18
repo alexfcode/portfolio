@@ -35,7 +35,7 @@ ul {
     list-style: none;
 }
 button {
-    background-color: transparent;
+    background-color: unset;
     border: none;
     cursor: pointer;
     color: ${theme.colors.font};
@@ -48,7 +48,6 @@ button {
         &::before {
             height: 100%;
             width: 100%;
-            background-color: transparent;
         }
        }
     
@@ -62,7 +61,7 @@ button {
         transform: translateX(-50%);
         position: absolute;
         z-index: -1;
-        background-color: ${theme.colors.accent};
+        background-color: transparent;
         
     }
     

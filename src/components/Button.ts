@@ -5,4 +5,5 @@ export const Button = styled.button`
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
 `
