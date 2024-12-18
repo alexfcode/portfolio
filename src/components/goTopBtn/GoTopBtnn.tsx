@@ -5,16 +5,33 @@ import { useEffect, useState } from 'react';
 
 export const GoTopBtnn = () => {
 
-    const [showBtn, setShowBtn] = useState(false)
+  const [showBtn, setShowBtn] = useState(false)
 
-    useEffect(() => {
-
-    }, [])
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        setShowBtn(true)
+      } else {
+        setShowBtn(false)
+      }
+    })
+  }, [])
 
   return (
-    <StyledGoTopBtn onClick={() => scroll.scrollToTop()}>
-        <Icon iconId={"arrowGoTop"} height={"15"} width={"15"} viewbox={"00 16 15"}/>
+
+    <>
+
+    {showBtn && (
+      <StyledGoTopBtn onClick={() => scroll.scrollToTop()}>
+      <Icon iconId={"arrowGoTop"} height={"15"} width={"15"} viewbox={"00 16 15"} />
     </StyledGoTopBtn>
+    )}
+      
+
+      <button></button>
+    </>
+
+
   )
 }
 

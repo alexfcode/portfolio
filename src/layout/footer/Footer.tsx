@@ -29,7 +29,7 @@ export const Footer = () => {
                         return (
                             <S.SocialItem key={index}>
                                 <S.SocialLink>
-                                <Icon height={'21px'} width={"21px"} viewbox={'0 0 21 21'} iconId={s.iconId}/>
+                                <Icon height={'21'} width={"21"} viewbox={'0 0 21 21'} iconId={s.iconId}/>
                                 </S.SocialLink>
                             </S.SocialItem>
                         )

@@ -3,6 +3,7 @@ import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { S } from "../Skills_Styles";
 
 
+
 type SkillPropsType = {
     iconId: string
     title: string
