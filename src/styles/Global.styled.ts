@@ -35,7 +35,7 @@ ul {
     list-style: none;
 }
 button {
-    background-color: unset;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     color: ${theme.colors.font};
@@ -48,6 +48,7 @@ button {
         &::before {
             height: 100%;
             width: 100%;
+            background-color: transparent;
         }
        }
     
