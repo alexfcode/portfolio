@@ -10,9 +10,8 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
 
 
- }
- 
- body {
+}
+body {
   color: ${theme.colors.font};
   line-height: 1.2;
   margin: 0;
@@ -69,4 +68,4 @@ p{
     font-weight: 400;
     line-height: 1.6;
 }
-`
+`;

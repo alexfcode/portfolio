@@ -2,21 +2,23 @@ import styled from "styled-components";
 import { theme } from "../styles/Theme";
 import { font } from "../styles/Common";
 
-type SectionTitlePropsTipe = {
-
-}
+type SectionTitlePropsTipe = {};
 
 export const SectionTitle = styled.h2`
-${font({family: '"Josefin Sans", sans-serif', weight: 600, Fmax: 36, Fmin: 30})}
+  ${font({
+    family: '"Josefin Sans", sans-serif',
+    weight: 600,
+    Fmax: 36,
+    Fmin: 30,
+  })}
 
-    text-align: center;
-    letter-spacing: 5px;
-    margin-bottom: 90px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 90px;
 
-    position: relative;
+  position: relative;
 
-
-&::before {
+  &::before {
     content: "";
     display: inline-block;
     width: 55px;
@@ -29,10 +31,7 @@ ${font({family: '"Josefin Sans", sans-serif', weight: 600, Fmax: 36, Fmin: 30})}
     transform: translateX(-50%);
 
     @media ${theme.media.mobile} {
-        bottom: -24px;
+      bottom: -24px;
     }
-    
-}
-`
-
-
+  }
+`;
